@@ -452,6 +452,9 @@ align-items: center;
     list-style: none;
     display: flex;
 }
+.form-hotels__item {
+    position: relative;
+}
 .form-hotels__item:first-child {
     margin-right: 119px;
 }
@@ -562,11 +565,11 @@ padding-left: 38px;
     border-radius: 50%;
     padding: 2px;
     cursor: pointer;
-    top: 160px;
+    top: -9px;
     
 }
 .toggle-max {
-   right: 157px;
+   right: 50px;
 }
 .form-hotels__button {
     position: absolute;
@@ -577,7 +580,7 @@ padding-left: 38px;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    right: 209px;
+    right: 88px;
    
 }
 .hotel__choice {
