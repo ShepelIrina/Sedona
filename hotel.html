@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" 
+       rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="page-header">
+        <img class="logo" src="./img/logo.png" alt="Логотип">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="nav__link">Информация</a> 
+                </li>
+                <li class="nav__item">
+                    <a href="nav__link">Фото и видео</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nav__link">Карта штата</a>
+                </li>
+                <li class="nav__item--active">
+                    <a href="nav__link">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hotels">
+        <form class="hotels__form form-hotels" method="GET">
+            <ul class="form-hotels__list">
+                <li class="form-hotels__item">
+                    <h3 class="form-hotels__title">
+                        Инфраструктура:
+                    </h3>
+                    
+                    <label class="form-hotels__check check">
+                        <input class="check__input" type="checkbox" checked>
+                        <span class="check__box"></span>
+                             Бассейн
+                    </label>
+                    <label class="form-hotels__check check">
+                        <input class="check__input" type="checkbox">
+                        <span class="check__box"></span>
+                             Парковка
+                    </label>
+                    <label class="form-hotels__check check">
+                        <input class="check__input" type="checkbox" >
+                        <span class="check__box"></span>
+                             Wi-fi
+                    </label>
+                        
+                </li>
+                <li class="form-hotels__item">
+                    <h3 class="form-hotels__title">
+                        Тип жилья:
+                    </h3>
+                    <label class="form-hotels__check check">
+                        <input class="check__input" type="checkbox" checked>
+                        <span class="check__box"></span>
+                            Гостиница
+                    </label>
+                    <label class="form-hotels__check check">
+                        <input class="check__input" type="checkbox" checked>
+                        <span class="check__box"></span>
+                            Мотель
+                    </label>
+                    <label class="form-hotels__check check">
+                        <input class="check__input" type="checkbox" checked>
+                        <span class="check__box"></span>
+                             Аппартаменты
+                    </label>
+                </li>
+                <li class="form-hotels__item">
+                    <h3 class="form-hotels__title price">
+                        Стоимость в сутки (р):
+                    </h3>
+                    <div class="form-hotel__price">
+                        <label class="min-price">
+                        <input  type="text" name="min-price" value="от 0">
+                        </label>
+                        <label class="max-price">
+                        <input   type="text" name="max-price" value="от 3000">
+                        </label>
+                    </div>
+                    <div class="price__control">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <button class="toggle toggle-min" type="button" aria-label="левая кнопка контроля"></button>
+                        <button class="toggle toggle-max" type="button" aria-label="правая кнопка контроля"></button>
+                    </div>
+                    <button class="form-hotels__button" >
+                        Показать
+                    </button>
+                </li>
+            </ul>
+
+        </form>
+        <section class="hotel__choice">
+            <div class="hotels__sorting">
+                <h2 class="sorting__title">
+                    Найдено: 3
+                </h2>
+                <h4 class="sorting__menu">
+                    Сортировка:
+                </h4>
+                <p class="sorting__text sorting__text--active">
+                    По цене
+                </p>
+                <p class="sorting__text">
+                    По типу
+                </p>
+                <p class="sorting__text">
+                    По рейтингу
+                </p>
+                <div class="sorting__icon">
+                    <svg class=" arrow arrow__up" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                    </svg>
+                    <svg class=" arrow arrow__down" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                    </svg>
+                </div>
+            </div>
+           
+            <ul class="hotel__list">
+                <li class="hotel__item">
+                    <img class="hotel__img" src="img/hotel1.jpg" alt="Фоторгафия отеля Amara resort and spa">
+                    <div class="item__list">
+                        <h2 class="list__title">
+                            Amara resort & spa
+                        </h2>
+                        <div class="list__text">
+                            <p class="text__hotel">
+                                Гостиница
+                            </p>
+                            <p class="text__hotel">
+                                от 4000 р.
+                            </p>
+                        </div>
+                        <div class="list__button">
+                            <button class="button__details">
+                                Подробнее
+                            </button>
+                            <button class="button__book">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hotels__rating">
+                        <svg width="91" height="17" viewBox="0 0 91 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                            <path d="M33.002 0L35.128 6.494H42.005L36.441 10.506L38.566 17L33.002 12.987L27.438 17L29.564 10.506L24 6.494H30.878L33.002 0Z" fill="#81B3D2"/>
+                            <path d="M58.002 0L60.128 6.494H67.005L61.441 10.506L63.566 17L58.002 12.987L52.438 17L54.564 10.506L49 6.494H55.878L58.002 0Z" fill="#81B3D2"/>
+                            <path d="M81.002 0L83.128 6.494H90.005L84.441 10.506L86.566 17L81.002 12.987L75.438 17L77.564 10.506L72 6.494H78.878L81.002 0Z" fill="#81B3D2"/>
+                        </svg>
+                        <button class="rating__button">
+                            Рейтинг: 8,5
+                        </button>
+                    </div>
+                </li>
+                <li class="hotel__item">
+                    <img class="hotel__img" src="img/hotel2.jpg" alt="Фоторгафия отеля Desert quail inn">
+                    <div class="item__list">
+                        <h2 class="list__title">
+                            Desert quail inn
+                        </h2>
+                        <div class="list__text">
+                            <p class="text__hotel">
+                                Мотель
+                            </p>
+                            <p class="text__hotel" >
+                                от 3000 р.
+                            </p>
+                        </div>
+                        <div class="list__button">
+                            <button class="button__details">
+                                Подробнее
+                            </button>
+                            <button class="button__book">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hotels__rating">
+                        <svg width="66" height="17" viewBox="0 0 66 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                            <path d="M33.002 0L35.128 6.494H42.005L36.441 10.506L38.566 17L33.002 12.987L27.438 17L29.564 10.506L24 6.494H30.878L33.002 0Z" fill="#81B3D2"/>
+                            <path d="M56.002 0L58.128 6.494H65.005L59.441 10.506L61.566 17L56.002 12.987L50.438 17L52.564 10.506L47 6.494H53.878L56.002 0Z" fill="#81B3D2"/>
+                        </svg>
+                        <button class="rating__button">
+                            Рейтинг: 8,9
+                        </button>
+                    </div>
+
+                </li>
+                <li class="hotel__item">
+                    <img class="hotel__img" src="img/hotel3.jpg" alt="Фоторгафия отеля Villas at poco diablo">
+                    <div class="item__list">
+                        <h2 class="list__title"> 
+                             Villas at poco diablo
+                        </h2>
+                        <div class="list__text">
+                            <p class="text__hotel">
+                             Апартаменты
+                            </p>
+                            <p class="text__hotel">
+                                от 2000 р.
+                            </p>
+                        </div>
+                        <div class="list__button">
+                            <button class="button__details">
+                                Подробнее
+                            </button>
+                            <button class="button__book">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hotels__rating">
+                        <svg width="42" height="17" viewBox="0 0 42 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                            <path d="M32.002 0L34.128 6.494H41.005L35.441 10.506L37.566 17L32.002 12.987L26.438 17L28.564 10.506L23 6.494H29.878L32.002 0Z" fill="#81B3D2"/>
+                        </svg>
+                        <button class="rating__button">
+                            Рейтинг: 9,2
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            
+        </section>
+
+    </main>
+    <footer class="page__footer">
+        <div class="connection">
+            <a class="connection__link" href="">
+                #Visitsedona
+            </a>
+            <p class="connection__text">
+                Тел: 
+                <a class="connection__link" href="">
+                    +7(495) 666-01-66
+                </a>
+            </p>
+            
+        </div>
+        <div class="social">
+            <a class="social__link" href="">
+                <svg class="social__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
+                </svg> 
+            </a>
+            <a class="social__link" href="">
+                <svg class="social__icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                    </svg>
+            </a>
+            <a class="social__link" href="">
+                <svg class="social__icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+                </svg> 
+                
+            </a>
+        </div>
+        <div class="copyright">
+            <p class="copyright__text">
+                website
+            </p>
+            <p class="copyright__text"> 
+                by
+            </p>
+            <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="логотип html академии">
+        </div>
+    </footer>
+</body>
